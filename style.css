@@ -1,0 +1,217 @@
+html {
+	box-sizing: border-box;
+	font-size: 10;
+}
+
+
+/* Reusable Class */
+
+.txt-red {
+	color: #f51010;
+}
+
+.bottom-margin {
+	margin-bottom: 3rem;
+}
+
+
+/***********************************************
+ 			Global styling
+************************************************/
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Saira Condensed', sans-serif;
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	max-width: 20rem;
+}
+
+
+
+/***********************************************
+ 		HEADER
+************************************************/
+
+header {
+	height: 30rem;
+	background: url('img/home.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 1.5rem 1.5rem 0;
+	background-color: #000;
+	position: relative;
+}
+
+nav {
+	background-color: #000;
+}
+
+.logo-container a {
+	display: flex;
+	align-items: center;
+}
+
+.logo-container img {
+	width: 2rem;
+	height: 38.25px;
+	margin-right: .7rem;
+}
+
+.logo-label {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+}
+
+nav {
+	display: flex;
+	margin-bottom: 2rem;
+}
+
+.nav--menu {
+	display: none;
+}
+
+.hero-section {
+	position: absolute;
+	top: 87%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.main-heading {
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 90%;
+	color: #fff;
+	font-size: 2.5rem;
+	line-height: 1;
+}
+
+
+/***********************************************
+ 		MAIN - card
+************************************************/
+
+
+
+.card {
+	width: 15rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2rem 5rem;
+	display: flex;
+	justify-content: center;
+	gap: 1.7rem;
+	box-shadow: 0 1.5rem 3rem rgba(245, 16, 16, .22);
+}
+
+.card-label--container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.card--text {
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .05rem;
+	margin-top: .5rem;
+}
+
+
+/***********************************************
+ 		MAIN - post
+************************************************/
+
+.post {
+	padding: 0 1rem;
+}
+
+.post .secondary-heading {
+	font-size: 2.4rem;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	border-left: .4rem solid #f51010;
+	padding-left: .5rem;
+	margin-bottom: 2rem;
+}
+
+.post-p {
+	color: #434343;
+	font-family:'Inter', sans-serif;
+	font-size: 1rem;
+	margin-bottom: 2rem;
+}
+
+.content--container {
+	text-align: center;
+}
+
+
+/***********************************************
+ 		FOOTER
+************************************************/
+
+footer {
+	background-color: #000;
+	text-align: center;
+	padding: 2rem 1rem;
+}
+
+footer .secondary-heading {
+	color: #fff;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	margin-bottom: 1.5rem;
+}
+
+.socials--container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+}
+
+.email--container a {
+	display: flex;
+	gap: .5rem;
+}
+
+.email--container .footer-p {
+	color: #ddd9d9;
+}
+
+.social-media--container {
+	display: flex;
+	gap: .8rem;
+}
+
+.privacy--container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.privacy--container a {
+	color: #ddd9d9;
+}
