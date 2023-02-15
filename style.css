@@ -1,6 +1,6 @@
 html {
 	box-sizing: border-box;
-	font-size: 10;
+	font-size: 10px;
 }
 
 
@@ -14,6 +14,10 @@ html {
 	margin-bottom: 3rem;
 }
 
+.padding {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
 
 /***********************************************
  			Global styling
@@ -30,6 +34,7 @@ html {
 body {
 	font-family: 'Saira Condensed', sans-serif;
 	line-height: 1.5;
+	font-size: 1.5rem;
 }
 
 a {
@@ -51,12 +56,12 @@ img {
 ************************************************/
 
 header {
-	height: 30rem;
+	height: 40rem;
 	background: url('img/home.jpg');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	padding: 1.5rem 1.5rem 0;
+	padding-top: 1.5rem;
 	background-color: #000;
 	position: relative;
 }
@@ -72,7 +77,6 @@ nav {
 
 .logo-container img {
 	width: 2rem;
-	height: 38.25px;
 	margin-right: .7rem;
 }
 
@@ -103,7 +107,7 @@ nav {
 	text-align: center;
 	line-height: 90%;
 	color: #fff;
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	line-height: 1;
 }
 
@@ -144,23 +148,19 @@ nav {
  		MAIN - post
 ************************************************/
 
-.post {
-	padding: 0 1rem;
-}
-
 .post .secondary-heading {
-	font-size: 2.4rem;
+	font-size: 3.4rem;
 	text-transform: uppercase;
 	letter-spacing: .5px;
-	border-left: .4rem solid #f51010;
-	padding-left: .5rem;
 	margin-bottom: 2rem;
+	position: relative;
+	border-left: .5rem solid #f51010;
+	padding-left: .5rem;
 }
 
 .post-p {
 	color: #434343;
 	font-family:'Inter', sans-serif;
-	font-size: 1rem;
 	margin-bottom: 2rem;
 }
 
@@ -176,7 +176,8 @@ nav {
 footer {
 	background-color: #000;
 	text-align: center;
-	padding: 2rem 1rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 footer .secondary-heading {
@@ -214,4 +215,19 @@ footer .secondary-heading {
 
 .privacy--container a {
 	color: #ddd9d9;
+}
+
+
+/***********************************************
+ 		MEDIA
+************************************************/
+
+@media screen and (min-width:480px) {
+	html {
+		font-size: 12px;
+	}
+
+	.header {
+		height: 80rem;
+	}
 }
