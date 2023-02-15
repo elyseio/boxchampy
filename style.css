@@ -227,7 +227,26 @@ footer .secondary-heading {
 		font-size: 12px;
 	}
 
-	.header {
-		height: 80rem;
+	img {
+		max-width: 50%;
 	}
+
+	.padding {
+		padding-left: 2.8rem;
+		padding-right: 2.8rem;
+	}
+
+	header {
+		height: 50rem;
+	}
+
+	.post .secondary-heading {
+		text-align: center;
+		border: 0;
+	}
+
+	footer img {
+		max-width: 40rem;
+	}
+
 }
