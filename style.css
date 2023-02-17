@@ -68,6 +68,10 @@ header {
 
 nav {
 	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 2rem;
 }
 
 .logo-container a {
@@ -84,11 +88,7 @@ nav {
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.6rem;
-}
-
-nav {
-	display: flex;
-	margin-bottom: 2rem;
+	font-weight: 700;
 }
 
 .nav--menu {
@@ -221,6 +221,7 @@ footer .secondary-heading {
 /***********************************************
  		MEDIA
 ************************************************/
+/* Mobile */
 
 @media screen and (min-width:480px) {
 	html {
@@ -250,3 +251,95 @@ footer .secondary-heading {
 	}
 
 }
+
+
+/* Tablet */
+
+@media screen and (min-width: 769px) {
+	html {
+		font-size: 16px;
+	}
+
+	.nav--menu {
+		display: flex;
+		align-items: flex-end;
+		gap: 1rem;
+	}
+
+	.nav--menu a {
+		color: #fff;
+		font-weight: 100;
+		font-size: 1.3rem;
+		letter-spacing: .5px;
+	}
+
+	.nav--menu .cta-btn a {
+		background: #f51010;
+		padding: .3rem 1.5rem;
+	}
+
+	.main-heading {
+		font-size: 4.5rem;
+	}
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+
+	.padding {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+
+	.nav--menu a {
+		font-size: 1.1rem;
+	}
+
+	header  {
+		height: 85vh;
+		background-size: contain;
+		background-position: right 45px bottom;
+		clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 100%);
+	}
+
+	.hero-section {
+		top: 40%;
+		left: 0;
+		transform: translateX(0);
+		width: 50%;
+	}
+
+	.main-content--container {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
+	img {
+		max-width: 80%;
+	}
+
+	.post .secondary-heading {
+		font-size: 3.4rem;
+		text-transform: uppercase;
+		letter-spacing: .5px;
+		margin-bottom: 2rem;
+		position: relative;
+		border-left: .4rem solid #f51010;
+		padding-left: .5rem;
+	}
+
+	.post .secondary-heading {
+		font-size: 3rem;
+		text-align: left;
+	}
+
+
+}
+
+
+
+
+
