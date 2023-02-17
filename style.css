@@ -260,6 +260,11 @@ footer .secondary-heading {
 		font-size: 16px;
 	}
 
+	.padding {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+
 	.nav--menu {
 		display: flex;
 		align-items: flex-end;
@@ -269,7 +274,7 @@ footer .secondary-heading {
 	.nav--menu a {
 		color: #fff;
 		font-weight: 100;
-		font-size: 1.3rem;
+		font-size: 1.15rem;
 		letter-spacing: .5px;
 	}
 
@@ -335,8 +340,12 @@ footer .secondary-heading {
 		font-size: 3rem;
 		text-align: left;
 	}
+}
 
-
+@media screen and (min-width: 1600px) {
+	img {
+		max-width: 60%;
+	}
 }
 
 
