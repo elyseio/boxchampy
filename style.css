@@ -260,10 +260,19 @@ footer .secondary-heading {
 		font-size: 16px;
 	}
 
+	body {
+		font-size: 1rem;
+	}
+
 	.padding {
 		padding-left: 2.5rem;
 		padding-right: 2.5rem;
 	}
+
+	header {
+		height: 40rem;
+	}
+
 
 	.nav--menu {
 		display: flex;
@@ -293,8 +302,16 @@ footer .secondary-heading {
 @media screen and (min-width: 1025px) {
 
 	.padding {
-		padding-left: 3rem;
-		padding-right: 3rem;
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
+	header.bottom-margin {
+		margin-bottom: 0;
+	}
+
+	.card.bottom-margin {
+		margin-bottom: 5rem;
 	}
 
 	.nav--menu a {
@@ -302,7 +319,7 @@ footer .secondary-heading {
 	}
 
 	header  {
-		height: 85vh;
+		height: 75vh;
 		background-size: contain;
 		background-position: right 45px bottom;
 		clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 100%);
@@ -317,35 +334,48 @@ footer .secondary-heading {
 
 	.main-content--container {
 		display: flex;
+		flex: auto;
 		flex-direction: row-reverse;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 	}
 
-	img {
-		max-width: 80%;
+	.content--container img {
+		max-width: 60%;
 	}
 
 	.post .secondary-heading {
-		font-size: 3.4rem;
-		text-transform: uppercase;
+		font-size: 2.8rem;
 		letter-spacing: .5px;
 		margin-bottom: 2rem;
 		position: relative;
 		border-left: .4rem solid #f51010;
 		padding-left: .5rem;
-	}
-
-	.post .secondary-heading {
-		font-size: 3rem;
 		text-align: left;
 	}
+
 }
 
 @media screen and (min-width: 1600px) {
-	img {
-		max-width: 60%;
+
+	.padding {
+		padding-left: 8rem;
+		padding-right: 8rem;
 	}
+
+	.post .secondary-heading {
+		font-size: 3.5rem;
+	}
+
+	.content--container {
+		max-widht: 60%;
+	}
+
+	.content--container img {
+		max-width: 50%;
+	}
+
+
 }
 
 
