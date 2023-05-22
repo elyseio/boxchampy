@@ -368,6 +368,7 @@ footer .secondary-heading {
 	.nav--menu {
 		display: flex;
 		flex-direction: row;
+        overflow: hidden;
 		align-items: flex-end;
 		gap: 1.5em;
 	}
@@ -504,11 +505,4 @@ footer .secondary-heading {
 	.content--container img {
 		max-width: 50%;
 	}
-
-
 }
-
-
-
-
-
